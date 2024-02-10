@@ -1,8 +1,8 @@
-pink = "";
+harry = "";
 object = [];
 status="";
 function preload() {
-pink = loadSound("pink_panther.mp3");
+harry = loadSound("harry_potter.mp3");
 }
 function setup(){    
 canvas = createCanvas(600, 400);
@@ -45,13 +45,13 @@ if (object[i].label == "person")
 {
     document.getElementById("status").innerHTML= "status : baby detected";
     console.log("stop please");
-    pink.stop();
+    harry.stop();
 }
 else
 {
     document.getElementById("status").innerHTML= "status : baby not detected";
     console.log("keep going");
-    pink.play();
+    harry.play();
 }
 
 }
@@ -59,7 +59,7 @@ if (object.length < 0)
 {
     document.getElementById("status").innerHTML= "status : baby not detected";
     console.log("keep going");
-    pink.play();  
+    harry.play();  
 }
 }
 }
